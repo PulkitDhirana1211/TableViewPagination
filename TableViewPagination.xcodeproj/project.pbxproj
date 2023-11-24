@@ -10,9 +10,14 @@
 		56AFA4862B1114E900E2C239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA4852B1114E900E2C239 /* AppDelegate.swift */; };
 		56AFA4882B1114E900E2C239 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA4872B1114E900E2C239 /* SceneDelegate.swift */; };
 		56AFA48A2B1114E900E2C239 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA4892B1114E900E2C239 /* ViewController.swift */; };
-		56AFA48D2B1114E900E2C239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AFA48B2B1114E900E2C239 /* Main.storyboard */; };
 		56AFA48F2B1114EA00E2C239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56AFA48E2B1114EA00E2C239 /* Assets.xcassets */; };
 		56AFA4922B1114EA00E2C239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AFA4902B1114EA00E2C239 /* LaunchScreen.storyboard */; };
+		56AFA49D2B1115DE00E2C239 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA49C2B1115DE00E2C239 /* CustomTableViewCell.swift */; };
+		56AFA4A12B111AE000E2C239 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 56AFA4A02B111AE000E2C239 /* SDWebImage */; };
+		56AFA4A32B111AE000E2C239 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 56AFA4A22B111AE000E2C239 /* SDWebImageMapKit */; };
+		56AFA4A62B11207900E2C239 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA4A52B11207900E2C239 /* APICaller.swift */; };
+		56AFA4A92B11210000E2C239 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA4A82B11210000E2C239 /* PostModel.swift */; };
+		56AFA4AB2B112EBF00E2C239 /* NewPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFA4AA2B112EBF00E2C239 /* NewPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,13 @@
 		56AFA4852B1114E900E2C239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56AFA4872B1114E900E2C239 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56AFA4892B1114E900E2C239 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56AFA48C2B1114E900E2C239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56AFA48E2B1114EA00E2C239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56AFA4912B1114EA00E2C239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56AFA4932B1114EA00E2C239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56AFA49C2B1115DE00E2C239 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		56AFA4A52B11207900E2C239 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		56AFA4A82B11210000E2C239 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		56AFA4AA2B112EBF00E2C239 /* NewPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AFA4A32B111AE000E2C239 /* SDWebImageMapKit in Frameworks */,
+				56AFA4A12B111AE000E2C239 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,66 @@
 		56AFA4842B1114E900E2C239 /* TableViewPagination */ = {
 			isa = PBXGroup;
 			children = (
-				56AFA4852B1114E900E2C239 /* AppDelegate.swift */,
-				56AFA4872B1114E900E2C239 /* SceneDelegate.swift */,
-				56AFA4892B1114E900E2C239 /* ViewController.swift */,
-				56AFA48B2B1114E900E2C239 /* Main.storyboard */,
-				56AFA48E2B1114EA00E2C239 /* Assets.xcassets */,
-				56AFA4902B1114EA00E2C239 /* LaunchScreen.storyboard */,
+				56AFA4A42B11206A00E2C239 /* Managers */,
+				56AFA4A72B1120F400E2C239 /* Models */,
+				56AFA4992B1115AE00E2C239 /* Resources */,
+				56AFA49A2B1115B500E2C239 /* Controllers */,
+				56AFA49B2B1115C200E2C239 /* Views */,
 				56AFA4932B1114EA00E2C239 /* Info.plist */,
 			);
 			path = TableViewPagination;
+			sourceTree = "<group>";
+		};
+		56AFA4992B1115AE00E2C239 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56AFA48E2B1114EA00E2C239 /* Assets.xcassets */,
+				56AFA4852B1114E900E2C239 /* AppDelegate.swift */,
+				56AFA4872B1114E900E2C239 /* SceneDelegate.swift */,
+				56AFA4A82B11210000E2C239 /* PostModel.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		56AFA49A2B1115B500E2C239 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				56AFA4892B1114E900E2C239 /* ViewController.swift */,
+				56AFA4AA2B112EBF00E2C239 /* NewPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56AFA49B2B1115C200E2C239 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				56AFA49C2B1115DE00E2C239 /* CustomTableViewCell.swift */,
+				56AFA49E2B11162E00E2C239 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56AFA49E2B11162E00E2C239 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				56AFA4902B1114EA00E2C239 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		56AFA4A42B11206A00E2C239 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				56AFA4A52B11207900E2C239 /* APICaller.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		56AFA4A72B1120F400E2C239 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +144,10 @@
 			dependencies = (
 			);
 			name = TableViewPagination;
+			packageProductDependencies = (
+				56AFA4A02B111AE000E2C239 /* SDWebImage */,
+				56AFA4A22B111AE000E2C239 /* SDWebImageMapKit */,
+			);
 			productName = TableViewPagination;
 			productReference = 56AFA4822B1114E900E2C239 /* TableViewPagination.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 56AFA4792B1114E900E2C239;
+			packageReferences = (
+				56AFA49F2B111AE000E2C239 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 56AFA4832B1114E900E2C239 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +195,6 @@
 			files = (
 				56AFA4922B1114EA00E2C239 /* LaunchScreen.storyboard in Resources */,
 				56AFA48F2B1114EA00E2C239 /* Assets.xcassets in Resources */,
-				56AFA48D2B1114E900E2C239 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AFA4AB2B112EBF00E2C239 /* NewPageViewController.swift in Sources */,
 				56AFA48A2B1114E900E2C239 /* ViewController.swift in Sources */,
+				56AFA4A92B11210000E2C239 /* PostModel.swift in Sources */,
 				56AFA4862B1114E900E2C239 /* AppDelegate.swift in Sources */,
+				56AFA49D2B1115DE00E2C239 /* CustomTableViewCell.swift in Sources */,
+				56AFA4A62B11207900E2C239 /* APICaller.swift in Sources */,
 				56AFA4882B1114E900E2C239 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +218,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		56AFA48B2B1114E900E2C239 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56AFA48C2B1114E900E2C239 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		56AFA4902B1114EA00E2C239 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +360,9 @@
 				INFOPLIST_FILE = TableViewPagination/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +370,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulkit1211.testing.TableViewPagination;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,9 +391,9 @@
 				INFOPLIST_FILE = TableViewPagination/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +401,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pulkit1211.testing.TableViewPagination;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,6 +432,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56AFA49F2B111AE000E2C239 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56AFA4A02B111AE000E2C239 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56AFA49F2B111AE000E2C239 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		56AFA4A22B111AE000E2C239 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56AFA49F2B111AE000E2C239 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56AFA47A2B1114E900E2C239 /* Project object */;
 }
